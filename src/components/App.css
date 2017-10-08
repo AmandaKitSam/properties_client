@@ -10,9 +10,23 @@
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+footer {
+  display: block;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+  font-size: 14px;
+  letter-spacing: .06em;
 }
+
+
+/* --------------disabled------------------- */
+
+/*.App-intro {
+  font-size: large;
+  // was the <p></p> at the beginning
+}*/
+
 
 /* --------------logo animation------------------- */
 

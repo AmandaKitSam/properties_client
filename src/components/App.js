@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
+
+import Properties from './Properties';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Project: Sam Properties</h1>
-        </header>
-        <p className="App-intro">
-          "This is where I write things..."
-        </p>
+        <Properties />
       </div>
     );
   }
