@@ -19,8 +19,16 @@ footer {
   letter-spacing: .06em;
 }
 
-/* --------------Nav Bar------------------- */
+/* --------------Sign In------------------- */
+.currentUser {
+  color: white;
+  font-size: 14px;
+}
 
+/* --------------Log out------------------- */
+.logout {
+  text-align: center;
+}
 
 
 /* --------------disabled------------------- */

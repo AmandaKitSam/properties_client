@@ -46,11 +46,12 @@ class SignUp extends Component {
         password: this.state.password,
         password_confirmation: this.state.password_confirmation
       }
-    },{
+    }, {
       withCredentials: true
     }).then(function (result) {
       this.props.setUser(result.data);
-    }.bind(this))
+      this.props.history.push( `/` );
+    }.bind(this));
   }
 
   render() {

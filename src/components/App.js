@@ -30,7 +30,7 @@ class App extends Component {
           <Route exact path="/logout" render={routeProps => <LogOut {...routeProps} setUser={this._setUser} />} />
         </div>
       </Router>
-    )
+    );
   }
 }
 

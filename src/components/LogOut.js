@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Home from './Home';
+import './App.css';
 
 const SERVER_PREFIX = 'http://localhost:5000/';
 
@@ -11,9 +13,9 @@ class LogOut extends Component {
   }
 
   logout() {
-    axios.delete(SERVER_PREFIX + 'login',{
+    axios.delete(`${SERVER_PREFIX}login`,{
       withCredentials: true
-    }).then((results) => {
+    }).then(function (result) {
       this.setState({
         user: null,
         route: '/'
@@ -23,8 +25,10 @@ class LogOut extends Component {
 
   render() {
     return(
-      <div className='logout'>
-        <Nav user={this.state.user} logout={this.logout} />
+      <div>
+        <nav user={this.state.user} logout={this.logout}></nav>
+        <h4 className='logout'>You have successfully logged out</h4>
+        <Home />
       </div>
     );
   }

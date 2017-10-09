@@ -32,6 +32,7 @@ class Home extends Component {
 
             { this.props.user &&
             <ul className="nav navbar-nav navbar-right">
+              <li className="currentUser">Welcome { this.props.user.name } <br/>  Email: { this.props.user.email }</li>
               <li><Link to="/logout"><span className="glyphicon glyphicon-log-out"></span> Log Out</Link>
               </li>
             </ul> }
