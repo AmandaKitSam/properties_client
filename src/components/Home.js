@@ -41,7 +41,7 @@ class Home extends Component {
         </nav>
 
         <header className="App-header">
-          <h1 className="App-title">Sam Properties</h1>
+          <h1 className="App-title">SAM Properties</h1>
         </header>
 
         <Properties />
