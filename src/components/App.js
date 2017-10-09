@@ -1,34 +1,35 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Link } from 'react-router-dom';
 
-
+import Home from './Home';
+import SignUp from './SignUp';
+import SignIn from './SignIn';
 import Properties from './Properties';
 
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { user: null };
+    this._setUser = this._setUser.bind(this);
+  }
+
+  _setUser(user) {
+    this.setState({user});
+  }
+
   render() {
     return (
-      <div className="App">
-
-        <nav className="navbar navbar-inverse">
-          <div className="container-flui">
-            <div className="">
-              <Link to="/signup">Sign Up</Link>
-              <Link to="/signin">Sign In</Link>
-            </div>
-          </div>
-        </nav>
-
-        <header className="App-header">
-          <h1 className="App-title">Sam Properties</h1>
-        </header>
-
-        <Properties />
-
-        <footer>Copyright &copy; By Amanda Sam</footer>
-      </div>
-    );
+      <Router>
+        <div>
+          <Route exact path="/" render={routeProps => <Home {...routeProps} user={this.state.user} />} />
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/signin" render={routeProps => <SignIn {...routeProps} setUser={this._setUser} />} />
+          <Route exact path="/logout" render={routeProps => <LogOut {...routeProps} setUser={this._setUser} />} />
+        </div>
+      </Router>
+    )
   }
 }
 

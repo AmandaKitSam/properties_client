@@ -36,6 +36,7 @@ class SignIn extends Component {
       withCredentials: true
     }).then(function (result) {
       this.props.setUser(result.data);
+      this.props.history.push( `/` );
     }.bind(this));
   }
 
@@ -43,13 +44,13 @@ class SignIn extends Component {
     return (
       <div className='signin'>
         <form onSubmit={ this._handleSubmit }>
-          <h3>Login</h3>
+          <h3>Sign In</h3>
           <input type='email' placeholder='Email' onChange={ this._handleChangeEmail } value={ this.state.email } autoFocus/>
           <br />
           <input type='password' placeholder='Password' onChange={ this._handleChangePassword } value={ this.state.password } />
           <br />
           <div className='loginButton'>
-          <button type='submit' method='post'>Log In</button>
+          <button type='submit' method='post'>Sign In</button>
           </div>
         </form>
       </div>
