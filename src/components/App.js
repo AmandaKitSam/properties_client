@@ -10,19 +10,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="SignUp">
-          <Link to="/signup">Sign Up</Link>
-        </div>
-        <div className="SignIn">
-          <Link to="/signin">Sign In</Link>
-        </div>
 
-        <Properties />
+        <nav className="navbar navbar-inverse">
+          <div className="container-flui">
+            <div className="">
+              <Link to="/signup">Sign Up</Link>
+              <Link to="/signin">Sign In</Link>
+            </div>
+          </div>
+        </nav>
 
         <header className="App-header">
           <h1 className="App-title">Sam Properties</h1>
         </header>
-        <h1>This is Properties js</h1>
+
+        <Properties />
+
         <footer>Copyright &copy; By Amanda Sam</footer>
       </div>
     );
