@@ -8,7 +8,7 @@ const SERVER_PREFIX = 'http://localhost:5000/';
 class SignUp extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: 'Emma', email: 'emma@ga.co', password: 'chicken', password_confirmation: 'chicken' };
+    this.state = { name: '', email: '', password: 'chicken', password_confirmation: 'chicken' };
     this._handleSubmit = this._handleSubmit.bind(this);
 
     this._handleNameChange = this._handleNameChange.bind(this);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './App.css';
 
 
 // TO RUN: rails server -p 5000
@@ -42,19 +43,19 @@ class SignIn extends Component {
 
   render() {
     return (
-      <div className='signin'>
+      <div className="signin">
         <form onSubmit={ this._handleSubmit }>
           <h3>Sign In</h3>
-          <input type='email' placeholder='Email' onChange={ this._handleChangeEmail } value={ this.state.email } autoFocus/>
+
+          <input type="email" placeholder="Email" onChange={ this._handleChangeEmail } value={ this.state.email } autoFocus/>
           <br />
-          <input type='password' placeholder='Password' onChange={ this._handleChangePassword } value={ this.state.password } />
+
+          <input type="password" placeholder="Password" onChange={ this._handleChangePassword } value={ this.state.password } />
           <br />
-          <div className='loginButton'>
-          <button type='submit' method='post'>Sign In</button>
-          </div>
+
+          <button type="submit" method="post">Sign In</button>
         </form>
       </div>
-
     );
   }
 }

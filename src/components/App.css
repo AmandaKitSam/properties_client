@@ -12,33 +12,74 @@
   font-size: 1.5em;
 }
 
+a, button, [type=button] {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Playfair Display', serif;
   letter-spacing: .04em;
 }
 
 footer {
-  display: block;
-  padding: 20px;
-  background-color: #333333;
-  color: white;
   font-size: 14px;
   letter-spacing: .06em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  color: white;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  padding: 20px;
+  bottom: 0;
 }
 
-/* --------------Sign In------------------- */
+
+/* -------------- Form ------------------- */
+input {
+  cursor: pointer;
+  border: 3px solid #333333;
+  box-shadow: 0 5px 10px 0 rgba(3, 3, 3, 0.8);
+  border-radius: 3px;
+  margin: 14px 0;
+  text-align: center;
+  font-size: 16px;
+  width: 30%;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  width: 5%;
+  min-width: 185px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #333333;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 0 rgba(3, 3, 3, 0.8);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(3, 3, 3, 0.8);
+  left: 50%;
+  margin-left: 100px;
+}
+
+/* -------------- Current User ------------------- */
 .currentUser {
   color: white;
   font-size: 14px;
 }
 
-/* --------------Log out------------------- */
+/* -------------- Log out ------------------- */
 .logout {
   text-align: center;
 }
 
 
-/* --------------disabled------------------- */
+/* -------------- disabled ------------------- */
 
 /*.App-intro {
   font-size: large;
@@ -46,7 +87,7 @@ footer {
 }*/
 
 
-/* --------------logo animation------------------- */
+/* -------------- logo animation ------------------- */
 
 /*.App-logo {
   animation: App-logo-spin infinite 20s linear;
