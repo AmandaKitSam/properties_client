@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Home from './Home';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
+import LogOut from './LogOut';
 import Properties from './Properties';
 
 import { HashRouter as Router, Route } from 'react-router-dom';

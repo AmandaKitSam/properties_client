@@ -22,7 +22,6 @@ class Home extends Component {
               <li><Link to="#">Rent</Link></li>
             </ul>
 
-            // if the user has login, don't show SignUp and SignIn
             { !this.props.user &&
             <ul className="nav navbar-nav navbar-right">
               <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link>
@@ -31,7 +30,6 @@ class Home extends Component {
               </li>
             </ul> }
 
-            // if the user has login, show Log Out
             { this.props.user &&
             <ul className="nav navbar-nav navbar-right">
               <li><Link to="/logout"><span className="glyphicon glyphicon-log-out"></span> Log Out</Link>
