@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 import Properties from './Properties';
+import SearchBar from './SearchBar';
 
 
 class Home extends Component {
@@ -45,6 +46,7 @@ class Home extends Component {
         </header>
 
         <Properties />
+        <SearchBar />
 
         <footer>Copyright &copy; By Amanda Sam</footer>
       </div>
