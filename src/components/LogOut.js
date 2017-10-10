@@ -3,7 +3,8 @@ import axios from 'axios';
 import Home from './Home';
 import './App.css';
 
-const SERVER_PREFIX = 'http://localhost:5000/';
+// const SERVER_PREFIX = 'http://localhost:5000/';
+const SERVER_PREFIX = 'https://properties-server.herokuapp.com/';
 
 class LogOut extends Component {
   constructor(props) {

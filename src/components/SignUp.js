@@ -3,7 +3,8 @@ import axios from 'axios';
 import './App.css';
 
 // TO RUN: rails server -p 5000
-const SERVER_PREFIX = 'http://localhost:5000/';
+// const SERVER_PREFIX = 'http://localhost:5000/';
+const SERVER_PREFIX = 'https://properties-server.herokuapp.com/';
 
 
 class SignUp extends Component {
