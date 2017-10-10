@@ -2,6 +2,12 @@
 
 ## By Amanda Sam
 
+Peoject is at the working stage:
+
+User Sign Up, Sign In, Log Out
+
+Please visit the website: https://amandakitsam.github.io/properties_client/#/
+
 -------------------------------------------
 
 The Front-End of the project: React
