@@ -25,7 +25,7 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path="/" render={routeProps => <Home {...routeProps} user={this.state.user} />} />
-          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/signup" render={routeProps => <SignUp {...routeProps} setUser={this._setUser} />} />
           <Route exact path="/signin" render={routeProps => <SignIn {...routeProps} setUser={this._setUser} />} />
           <Route exact path="/logout" render={routeProps => <LogOut {...routeProps} setUser={this._setUser} />} />
         </div>

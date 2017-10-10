@@ -12,6 +12,7 @@ class LogOut extends Component {
     this.logout = this.logout.bind(this);
   }
 
+  // to do: need the logout message disappear in 5 secs
   logout() {
     axios.delete(`${SERVER_PREFIX}login`,{
       withCredentials: true

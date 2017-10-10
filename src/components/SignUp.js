@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './App.css';
 
 // TO RUN: rails server -p 5000
 const SERVER_PREFIX = 'http://localhost:5000/';
@@ -8,7 +9,7 @@ const SERVER_PREFIX = 'http://localhost:5000/';
 class SignUp extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: '', email: '', password: 'chicken', password_confirmation: 'chicken' };
+    this.state = { errors: null, name: 'Bee', email: 'bee@ga.co', password: 'chicken', password_confirmation: 'chicken' };
     this._handleSubmit = this._handleSubmit.bind(this);
 
     this._handleNameChange = this._handleNameChange.bind(this);
@@ -49,8 +50,13 @@ class SignUp extends Component {
     }, {
       withCredentials: true
     }).then(function (result) {
-      this.props.setUser(result.data);
-      this.props.history.push( `/` );
+      if (result.data.errors) {
+        // show error message
+        this.setState({errors: result.data.errors})
+      } else {
+        this.props.setUser(result.data);
+        this.props.history.push( `/` );
+      }
     }.bind(this));
   }
 
@@ -59,6 +65,8 @@ class SignUp extends Component {
       <div className='signup'>
         <form onSubmit={ this._handleSubmit }>
           <h3>Please Sign Up Here</h3>
+          <br />
+          <p>{this.state.errors}</p>
           <br />
           <input type='text' placeholder='Name' onInput={ this._handleNameChange } value={ this.state.name } autoFocus />
           <br />
