@@ -4,7 +4,7 @@
 
 Peoject is at the working stage:
 
-User Sign Up, Sign In, Log Out
+User can Sign up, Sign in, Logout
 
 Please visit the website: https://amandakitsam.github.io/properties_client/#/
 
@@ -15,6 +15,9 @@ The Front-End of the project: React
 -------------------------------------------
 
 The Back-End of the project: Ruby on Rails
+
+- You can find my work at https://github.com/AmandaKitSam/properties_server
+
 
 -------------------------------------------
 
