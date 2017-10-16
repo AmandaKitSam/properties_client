@@ -2,7 +2,7 @@
 
 ## By Amanda Sam
 
-Peoject is at the working stage:
+The project is at the working stage:
 
 User can Sign up, Sign in, Logout
 
