@@ -2,9 +2,9 @@
 
 ## By Amanda Sam
 
-The project is at the working stage:
+### The project is at the working stage:
 
-User can Sign up, Sign in, Logout
+User's Sign up, Sign in, Logout (Done in React)
 
 Please visit the website: https://amandakitsam.github.io/properties_client/#/
 
@@ -18,8 +18,8 @@ The Back-End of the project: Ruby on Rails
 
 - You can find my work at https://github.com/AmandaKitSam/properties_server
 
-
 -------------------------------------------
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
